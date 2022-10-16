@@ -6,8 +6,9 @@ services:
     # automatically restart the container - Docker daemon on restart or 
     # the container itself is manually retarted
     restart: always
+
     volumes:
-      - ./data/db:/var/lib/postgesql/data
+      - ./data/db:/var/lib/postgresql/data
 
     environment:
       POSTGRES_USER: root
@@ -23,6 +24,10 @@ services:
     container_name: pgamin4
     image: dpage/pgadmin4
     restart: always
+
+    volumes:
+      - ./data/pgadmin-data:/var/lib/pgadmin
+
     environment:
       PGADMIN_DEFAULT_EMAIL: root@root.com
       PGADMIN_DEFAULT_PASSWORD: root
