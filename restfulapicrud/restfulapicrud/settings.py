@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'restfulapicrud.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'resfulapi_db',
+        'NAME': 'test_db',
         'USER': 'root',
         'PASSWORD': 'root',
-        'HOST': '172.18.0.3',
+        'HOST': '127.0.0.1',
         'PORT': '5432',
     }
 }
