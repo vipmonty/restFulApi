@@ -5,3 +5,6 @@ docker inspect xyz
 
 pip install psycopg2
 pip freeze > requirements.txt
+
+python manage.py makemigration <appname>  #in order update db table with model.py class
+python manage.py migrate
